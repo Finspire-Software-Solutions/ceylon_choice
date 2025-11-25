@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import HeroSlide from './HeroSlide';
-import { heroSlides } from '../../data/heroSlides';
+import { heroSlides } from '@/data/heroSlides';
+import { Button } from '@/components/ui/button';
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
@@ -14,7 +15,7 @@ export default function HeroSlider() {
     if (hover || dragging) return;
     intervalRef.current = window.setInterval(() => {
       setIndex((i) => (i + 1) % heroSlides.length);
-    }, 5000);
+    }, 3000);
     return () => {
       if (intervalRef.current) window.clearInterval(intervalRef.current);
     };
@@ -59,11 +60,13 @@ export default function HeroSlider() {
       </div>
       <div className="mt-3 flex items-center justify-center gap-2">
         {heroSlides.map((_, i) => (
-          <button
+          <Button
             key={i}
+            variant={index === i ? 'default' : 'outline'}
+            size="icon"
             aria-label={`Go to slide ${i + 1}`}
             onClick={() => setIndex(i)}
-            className={`w-2.5 h-2.5 rounded-full ${index === i ? 'bg-[color:var(--color-primary)]' : 'bg-white/60'}`}
+            className="w-2.5 h-2.5 rounded-full"
           />
         ))}
       </div>

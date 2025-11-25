@@ -14,7 +14,7 @@ export const heroSlides: HeroSlide[] = [
     description: 'Discover premium quality products crafted with care.',
     ctaText: 'Shop Products',
     ctaLink: '/products',
-    image: '/vite.svg',
+    image: '/images/slider/s1.jpg',
   },
   {
     title: 'Quality You Can Trust',
@@ -22,7 +22,7 @@ export const heroSlides: HeroSlide[] = [
     description: 'From ingredients to packaging, we ensure top standards.',
     ctaText: 'Learn More',
     ctaLink: '/about',
-    image: '/vite.svg',
+    image: '/images/slider/s2.jpg',
   },
   {
     title: 'Fresh and Flavorful',
@@ -30,7 +30,7 @@ export const heroSlides: HeroSlide[] = [
     description: 'Experience the richness of Sri Lankan ingredients.',
     ctaText: 'Explore Groceries',
     ctaLink: '/products',
-    image: '/vite.svg',
+    image: '/images/slider/s1.jpg',
   },
   {
     title: 'Snack Time Perfected',
@@ -38,6 +38,6 @@ export const heroSlides: HeroSlide[] = [
     description: 'Our chips are crafted for bold flavor and crispness.',
     ctaText: 'View Snacks',
     ctaLink: '/products',
-    image: '/vite.svg',
+    image: '/images/slider/s2.jpg',
   },
 ];

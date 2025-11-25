@@ -1,15 +1,16 @@
+import { Button } from '@/components/ui/button';
+
 type Props = {
   value: 'all' | 'grocery' | 'snacks';
   onChange: (v: 'all' | 'grocery' | 'snacks') => void;
 };
 
 export default function ProductFilter({ value, onChange }: Props) {
-  const base = 'px-4 py-2 rounded';
   return (
     <div className="flex items-center justify-center gap-2">
-      <button onClick={() => onChange('all')} className={`${base} ${value === 'all' ? 'bg-[color:var(--color-primary)] text-white' : 'bg-gray-100'}`}>All</button>
-      <button onClick={() => onChange('grocery')} className={`${base} ${value === 'grocery' ? 'bg-[color:var(--color-primary)] text-white' : 'bg-gray-100'}`}>Grocery Items</button>
-      <button onClick={() => onChange('snacks')} className={`${base} ${value === 'snacks' ? 'bg-[color:var(--color-primary)] text-white' : 'bg-gray-100'}`}>Chips Items</button>
+      <Button onClick={() => onChange('all')} variant={value === 'all' ? 'default' : 'outline'}>All</Button>
+      <Button onClick={() => onChange('grocery')} variant={value === 'grocery' ? 'default' : 'outline'}>Grocery Items</Button>
+      <Button onClick={() => onChange('snacks')} variant={value === 'snacks' ? 'default' : 'outline'}>Chips Items</Button>
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import WhatsAppFloat from './components/layout/WhatsAppFloat';
+import CTASection from './components/layout/CTASection';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
@@ -18,6 +20,8 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <WhatsAppFloat />
+      <CTASection />
       <Footer />
     </BrowserRouter>
   );
