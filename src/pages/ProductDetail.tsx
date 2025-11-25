@@ -91,8 +91,10 @@ export default function ProductDetail() {
           </Card>
         </div>
 
-        <div className="pt-2">
-          <Button asChild>
+        <div className="pt-2 my-6">
+          <Button asChild
+          
+          className='bg-green-500'>
             <a href={`${contact.whatsappLink}?text=${encodeURIComponent('I would like to know more about ' + product.name)}`} target="_blank" rel="noreferrer">Chat on WhatsApp</a>
           </Button>
         </div>
