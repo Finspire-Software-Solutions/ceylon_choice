@@ -8,16 +8,39 @@ export default function Footer() {
      
       <div className="bg-[color:var(--color-dark-bg)] text-white">
         <div className="container mt-10 grid gap-12 py-12 md:grid-cols-3 items-start">
-          <div className="space-y-3">
+         
+          <div className="space-y-3 text-center md:text-left flex flex-col items-center md:items-start">
               <img src="/logo/logo_white.svg" alt={company.name} className="h-12" />
               <div className="mt-1 text-sm uppercase tracking-wider text-[0.85rem]">{company.name}</div>
               <div className="text-sm">{company.address}</div>
-              <div className="mt-3 text-sm flex flex-col gap-1">
-                <div className="flex items-center gap-2"><Phone size={16} /> <a href={contact.whatsappLink} target="_blank" rel="noreferrer" className="hover:underline">{contact.phone}</a></div>
+              <div className="mt-3 text-sm flex flex-col gap-2 items-center md:items-start">
+                <div className="flex items-start gap-2">
+                  <div className="w-8 h-8 flex items-center justify-center text-white rounded-md">
+                    <Phone size={14} />
+                  </div>
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-3">
+                      <span className="w-12 font-medium text-sm">LK</span>
+                      <a href={`tel:${contact.phone_lk.replace(/\s+/g, '')}`} className="hover:underline truncate">{contact.phone_lk}</a>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <span className="w-12 font-medium text-sm">UK</span>
+                      <a href={`tel:${contact.phone_uk.replace(/\s+/g, '')}`} className="hover:underline truncate">{contact.phone_uk}</a>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <span className="w-12 font-medium text-sm">FR</span>
+                      <a href={`tel:${contact.phone_fr.replace(/\s+/g, '')}`} className="hover:underline truncate">{contact.phone_fr}</a>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="flex items-center gap-2"><Mail size={16} /> <a href={`mailto:${contact.email}`} className="hover:underline">{contact.email}</a></div>
               </div>
           </div>
 
+        
           <div className="text-center">
             <div className="text-xl font-semibold">Stay Connected With Us</div>
             <div className="mt-4 flex justify-center items-center gap-4">
@@ -35,7 +58,8 @@ export default function Footer() {
             </form> */}
           </div>
 
-          <div className="md:text-right">
+         
+          <div className="text-center md:text-right flex flex-col items-center md:items-end">
             <div className="text-xl font-semibold">Quick Links</div>
             <ul className="mt-4 space-y-3">
               {footerContent.quickLinks.map((q) => (
@@ -44,7 +68,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-white/20">
+        <div className="border-t border-white/20 text-center flex flex-col items-center md:items-start">
           <div className="container py-4 text-sm">© {new Date().getFullYear()} Ceylon Choice</div>
         </div>
       </div>

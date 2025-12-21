@@ -16,7 +16,7 @@ export default function ProductCard({ product, onClick }: Props) {
   return (
     <Card className="flex flex-col transition hover:shadow-xl hover:-translate-y-1">
       <CardHeader>
-        <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-t-lg" />
+        <img src={product.image} alt={product.name} loading="lazy" className="w-full h-auto object-cover rounded-t-lg" />
         <div className="flex items-center justify-between pt-4">
           <CardTitle>{product.name}</CardTitle>
           {product.category == 'snacks' &&<span className="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">{product.category}</span>}

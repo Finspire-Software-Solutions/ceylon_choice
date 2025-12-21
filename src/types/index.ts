@@ -1,6 +1,13 @@
 interface Price {
   eur: number;
   lkr: number;
+  gbp?: number;
+}
+
+interface PricePerKg {
+  eur: number;
+  lkr: number;
+  gbp: number;
 }
 
 interface CompanyInfo {
@@ -11,16 +18,17 @@ interface CompanyInfo {
 
 interface NutritionalFacts {
   servingSize: string;
-  calories: number;
+  // calories: number;
   totalFat: string;
   saturatedFat: string;
-  transFat: string;
-  cholesterol: string;
-  sodium: string;
-  totalCarbohydrates: string;
-  dietaryFiber: string;
+  // transFat: string;
+  // cholesterol: string;
+  // sodium: string;
+  // totalCarbohydrates: string;
+  // dietaryFiber: string;
   sugars: string;
-  protein: string;
+  // protein: string;
+  energy: string;
 }
 
 interface DietaryInfo {
@@ -48,6 +56,7 @@ interface SnackProduct extends BaseProduct {
   ingredients: string[];
   nutritionalFacts: NutritionalFacts;
   dietaryInfo: DietaryInfo;
+  pricePerKg?: PricePerKg;
 }
 
 interface GroceryProduct extends BaseProduct {

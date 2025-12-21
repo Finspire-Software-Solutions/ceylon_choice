@@ -71,3 +71,23 @@ export default defineConfig([
   },
 ])
 ```
+
+## Deploying to Netlify
+
+If Netlify is serving an older version after pushing changes, try the following:
+
+- Confirm your local `main` branch is pushed:
+
+```powershell
+git status
+git rev-parse --short HEAD
+git push origin main
+```
+
+- In the Netlify site dashboard go to **Deploys** → **Trigger deploy** → **Clear cache and deploy site**. This forces Netlify to rebuild and upload files even if output hashes didn't change.
+
+- Verify the deploy log's commit SHA matches your local `git rev-parse HEAD`.
+
+- If redirects are not working, ensure `dist/_redirects` and `netlify.toml` contain the SPA rule. Both are supported; adding the `[[redirects]]` block in `netlify.toml` (already present) makes it explicit.
+
+If you want, I can add a short build stamp to `index.html` so it's easy to verify which build is live.

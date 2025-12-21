@@ -16,7 +16,12 @@ export default function ProductDetail() {
           <CardTitle className="sr-only">Image</CardTitle>
         </CardHeader>
         <CardContent>
-          <img src={product.image} alt={product.name} className="w-full h-96 object-cover rounded-md" />
+          <img 
+            src={product.image} 
+            alt={product.name} 
+            loading="lazy"
+            className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover rounded-md transition-transform duration-300 hover:scale-105" 
+          />
         </CardContent>
       </Card>
       <div className="space-y-4">
@@ -59,8 +64,10 @@ export default function ProductDetail() {
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-2 text-sm">
-                  {Object.entries(product.nutritionalFacts).map(([k, v]) => (
-                    <div key={k} className="border rounded p-2 flex items-center justify-between"><span className="capitalize">{k}</span><span>{String(v)}</span></div>
+                  {Object.entries(product.nutritionalFacts)
+                    .filter(([_, v]) => v !== 'N/A' && v !== 'Unknown')
+                    .map(([k, v]) => (
+                    <div key={k} className="border rounded p-2 flex items-center justify-between"><span className="capitalize">{k.replace(/([A-Z])/g, ' $1').trim()}</span><span>{String(v)}</span></div>
                   ))}
                 </div>
               </CardContent>

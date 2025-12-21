@@ -9,13 +9,15 @@ export const company = {
 };
 
 export const contact = {
-  email: 'info@ceylonchoice.lk',
-  phone: '+94 770427773',
-  whatsappLink: 'https://wa.me/94770427773',
+  email: 'contact.ceylonchoice@gmail.com',
+  phone_lk: '+94 742903651',
+  phone_uk: '+44 7405319419',
+  phone_fr: '+33 745688635',
+  whatsappLink: 'https://wa.me/94742903651',
 };
 
 export const social = {
-  whatsapp: 'https://wa.me/94770427773',
+  whatsapp: 'https://wa.me/94742903651',
   instagram: 'https://instagram.com',
   facebook: 'https://facebook.com',
 };

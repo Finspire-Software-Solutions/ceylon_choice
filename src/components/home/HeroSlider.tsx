@@ -46,7 +46,7 @@ export default function HeroSlider() {
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}
       onPointerCancel={endDrag}
-      className="overflow-hidden"
+      className="overflow-hidden touch-pan-y select-none"
     >
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -58,7 +58,7 @@ export default function HeroSlider() {
           </div>
         ))}
       </div>
-      <div className="mt-3 flex items-center justify-center gap-2">
+      <div className="mt-3 md:mt-4 flex items-center justify-center gap-1.5 sm:gap-2">
         {heroSlides.map((_, i) => (
           <Button
             key={i}
@@ -66,7 +66,7 @@ export default function HeroSlider() {
             size="icon"
             aria-label={`Go to slide ${i + 1}`}
             onClick={() => setIndex(i)}
-            className="w-2.5 h-2.5 rounded-full"
+            className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full p-0 min-w-0 touch-manipulation"
           />
         ))}
       </div>
