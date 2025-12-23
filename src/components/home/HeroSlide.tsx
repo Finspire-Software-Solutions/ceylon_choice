@@ -16,7 +16,7 @@ export default function HeroSlide(props: Props) {
         className="absolute inset-0 w-full h-full object-cover object-center" 
         loading="lazy"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20" />
+      <div className="absolute inset-0" />
       <div className="relative z-10 h-full container flex items-center justify-center md:justify-end px-4 sm:px-6">
         <div className="max-w-xl text-white text-center md:text-right w-full md:pr-8 lg:pr-12">
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
