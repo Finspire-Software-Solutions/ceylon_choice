@@ -17,7 +17,7 @@ type Props = {
   pageSize?: number;
 };
 
-export default function ProductGrid({ products, onSelect, pageSize = 10 }: Readonly<Props>) {
+export default function ProductGrid({ products, onSelect, pageSize = 12 }: Readonly<Props>) {
   const [page, setPage] = useState(1);
   const totalPages = Math.max(1, Math.ceil(products.length / pageSize));
   const visible = useMemo(() => {
