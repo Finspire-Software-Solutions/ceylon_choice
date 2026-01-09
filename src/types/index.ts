@@ -63,12 +63,26 @@ interface GroceryProduct extends BaseProduct {
   category: 'grocery';
 }
 
+// Image-only category types - these categories only display images without product details
+type ImageOnlyCategory = 'dryFish' | 'fish' | 'spice' | 'vegetable' | 'meat' | 'fruits';
+
+interface ImageOnlyProduct {
+  id: string;
+  name: string;
+  category: ImageOnlyCategory;
+  image: string;
+}
+
 type Product = SnackProduct | GroceryProduct;
+type AllProduct = Product | ImageOnlyProduct;
 
 export type {
   Product,
+  AllProduct,
   SnackProduct,
   GroceryProduct,
+  ImageOnlyProduct,
+  ImageOnlyCategory,
   BaseProduct,
   Price,
   CompanyInfo,

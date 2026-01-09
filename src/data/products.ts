@@ -1,12 +1,15 @@
 import type { Product } from '../types';
 
+// Cloudinary base URL
+const CLOUDINARY_BASE = 'https://res.cloudinary.com/dszgwsh5a/image/upload';
+
 export const products: Product[] = [
   // --- Grocery Products ---
   {
     id: 'grocery-001',
     name: 'Parboiled Red Rice',
     category: 'grocery',
-    image: '/images/grocery/parbioledRedRice.JPG',
+    image: `${CLOUDINARY_BASE}/v1767964408/parbioledRedRice_cv3vmo.jpg`,
     price: { eur: 4.99, lkr: 500 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -27,7 +30,7 @@ export const products: Product[] = [
     id: 'grocery-002',
     name: 'Chana Dal',
     category: 'grocery',
-    image: '/images/grocery/kadala.jpg',
+    image: `${CLOUDINARY_BASE}/v1767964403/kadala_idl75w.jpg`,
     price: { eur: 3.5, lkr: 350 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -48,7 +51,7 @@ export const products: Product[] = [
     id: 'grocery-003',
     name: 'Masoor Dal',
     category: 'grocery',
-    image: '/images/grocery/maisoor.JPG',
+    image: `${CLOUDINARY_BASE}/v1767964406/maisoor_hpqdws.jpg`,
     price: { eur: 3.99, lkr: 400 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -69,7 +72,7 @@ export const products: Product[] = [
     id: 'grocery-004',
     name: 'Rice Flour',
     category: 'grocery',
-    image: '/images/grocery/riceflour.JPG',
+    image: `${CLOUDINARY_BASE}/v1767964417/riceflour_fg5xwo.jpg`,
     price: { eur: 2.5, lkr: 250 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -90,7 +93,7 @@ export const products: Product[] = [
     id: 'grocery-005',
     name: 'Red Raw Peanuts',
     category: 'grocery',
-    image: '/images/grocery/peanut.JPG',
+    image: `${CLOUDINARY_BASE}/v1767964411/peanut_e5mqlt.jpg`,
     price: { eur: 5.5, lkr: 550 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -111,7 +114,7 @@ export const products: Product[] = [
     id: 'grocery-006',
     name: 'Big Chick Peas',
     category: 'grocery',
-    image: '/images/grocery/chickPeas.JPG',
+    image: `${CLOUDINARY_BASE}/v1767964663/chickPeas_twc2wg.jpg`,
     price: { eur: 4.75, lkr: 475 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -132,7 +135,7 @@ export const products: Product[] = [
     id: 'grocery-007',
     name: 'Bread Crumbs',
     category: 'grocery',
-    image: '/images/grocery/breadCrumbs.JPG',
+    image: `${CLOUDINARY_BASE}/v1767964398/breadCrumbs_rdcgd0.jpg`,
     price: { eur: 3, lkr: 300 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -153,7 +156,7 @@ export const products: Product[] = [
     id: 'grocery-008',
     name: 'Red Raw Rice',
     category: 'grocery',
-    image: '/images/grocery/redRawRice.JPG',
+    image: `${CLOUDINARY_BASE}/v1767964414/redRawRice_adf8m1.jpg`,
     price: { eur: 4.5, lkr: 450 },
     madeIn: 'Sri Lanka',
     quantity: '1KG',
@@ -176,7 +179,7 @@ export const products: Product[] = [
     id: 'snack-001',
     name: 'Jaffna Hot Pakoda (Pakoda épicée de Jaffna)',
     category: 'snacks',
-    image: '/images/snacks/jaffna_hot_pakoda.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966936/jaffna_hot_pakoda_v8yjw4.jpg`,
     price: { eur: 0.71, lkr: 188, gbp: 0.6 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -225,7 +228,7 @@ export const products: Product[] = [
     id: 'snack-002',
     name: 'Mutton Mixture (mélange de mouton)',
     category: 'snacks',
-    image: '/images/snacks/mutton_mixture.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966898/mutton_mixture_uknl2k.jpg`,
     price: { eur: 0.71, lkr: 188, gbp: 0.6 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -276,7 +279,7 @@ export const products: Product[] = [
     id: 'snack-003',
     name: 'Paruthiture Vade (Dal de Chana chaud)',
     category: 'snacks',
-    image: '/images/snacks/paruthiture_vade.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966898/paruthiture_vade_zyv5qn.jpg`,
     price: { eur: 4.25, lkr: 425 },
     pricePerKg: { eur: 1, lkr: 350, gbp: 0.8 },
     ingredients: [
@@ -325,7 +328,7 @@ export const products: Product[] = [
     id: 'snack-004',
     name: 'Spicy Murukku (Murukku épicé)',
     category: 'snacks',
-    image: '/images/snacks/spicy_murukku.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966903/spicy_murukku_jj1lki.jpg`,
     price: { eur: 3.5, lkr: 350 },
     pricePerKg: { eur: 1, lkr: 350, gbp: 0.8 },
     ingredients: [
@@ -375,7 +378,7 @@ export const products: Product[] = [
     id: 'snack-005',
     name: 'Bitter Gourd Pakoda (Pakoda au gourd amer)',
     category: 'snacks',
-    image: '/images/snacks/bitter_gourd_pakoda.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966914/bitter_gourd_pakoda_gsyjpb.jpg`,
     price: { eur: 4, lkr: 400 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -426,7 +429,7 @@ export const products: Product[] = [
     id: 'snack-006',
     name: 'Jaffna Hot Mixture 250g (Mélange épicé de Jaffna)',
     category: 'snacks',
-    image: '/images/snacks/jaffna_hot_mixture_250g.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966930/jaffna_hot_mixture_250g_b7oow0.jpg`,
     price: { eur: 1.18, lkr: 313, gbp: 1 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -476,7 +479,7 @@ export const products: Product[] = [
     id: 'snack-007',
     name: 'Hot Channa Dal (Dal de Chana chaud)',
     category: 'snacks',
-    image: '/images/snacks/hot_channa_dal.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966920/hot_channa_dal_og5frg.jpg`,
     price: { eur: 0.47, lkr: 125, gbp: 0.4 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -523,7 +526,7 @@ export const products: Product[] = [
     id: 'snack-008',
     name: 'Beef Mixture (Bœuf de mouton)',
     category: 'snacks',
-    image: '/images/snacks/beef_mixture.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966909/beef_mixture_dtd8up.jpg`,
     price: { eur: 0.71, lkr: 188, gbp: 0.6 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -574,7 +577,7 @@ export const products: Product[] = [
     id: 'snack-009',
     name: 'Jaffna Hot Mixture 500g (Mélange épicé de Jaffna)',
     category: 'snacks',
-    image: '/images/snacks/jaffna_hot_mixture_500g.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966934/jaffna_hot_mixture_500g_ugov5c.jpg`,
     price: { eur: 2.35, lkr: 625, gbp: 2 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -624,7 +627,7 @@ export const products: Product[] = [
     id: 'snack-010',
     name: 'Hot Spiced Chickpeas 100g (Pois chiches épicés)',
     category: 'snacks',
-    image: '/images/snacks/hot_spiced_chickpeas_100g.jpeg',
+    image: `${CLOUDINARY_BASE}/v1767966926/hot_spiced_chickpeas_100g_ihpidy.jpg`,
     price: { eur: 0.47, lkr: 125, gbp: 0.4 },
     pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
     ingredients: [
@@ -670,4 +673,51 @@ export const products: Product[] = [
       contact: 'N/A',
     },
   },
+  {
+    id: 'snack-011',
+    name: 'Cassava Chips (chips de manioc)',
+    category: 'snacks',
+    image: `${CLOUDINARY_BASE}/v1767628040/41_e5cj3c.jpg`,
+    price: { eur: 0.47, lkr: 125, gbp: 0.4 },
+    pricePerKg: { eur: 4.7, lkr: 1250, gbp: 4 },
+    ingredients: [
+      'Cassava',
+      'Fried Peanuts',
+      'Iodized Salt',
+      'Vegetable Oil',
+    ],
+    nutritionalFacts: {
+      servingSize: '100g',
+      //calories: 410,
+      totalFat: '21%',
+      saturatedFat: '10%',
+      // transFat: '0g',
+      // cholesterol: '0mg',
+      // sodium: 'N/A',
+      // totalCarbohydrates: 'N/A',
+      // dietaryFiber: 'N/A',
+      sugars: '3%',
+      // protein: 'N/A',
+      energy: '20%',
+    },
+    dietaryInfo: {
+      isVegetarian: true,
+      isNonVegetarian: false,
+      isHalal: false,
+    },
+    madeIn: 'UK',
+    quantity: '100g',
+    mfd: 'N/A',
+    exp: '2026-06-19',
+    manufacturer: {
+      name: 'Ceylon Choice UK LTD',
+      address: '36 Dryden Close, 1G6 3EA',
+      contact: 'N/A',
+    },
+    distributer: {
+      name: 'Ceylon Choice UK LTD',
+      address: '36 Dryden Close, 1G6 3EA',
+      contact: 'N/A',
+    },
+  }
 ];

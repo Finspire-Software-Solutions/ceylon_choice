@@ -1,6 +1,6 @@
 export const site = {
   title: 'Ceylon Choice',
-  description: 'Premium Sri Lankan food products: snacks and groceries',
+  description: 'Premium Sri Lankan food products: snacks and groceries wholesale',
 };
 
 export const company = {
