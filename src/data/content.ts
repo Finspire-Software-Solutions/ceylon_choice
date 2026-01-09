@@ -1,6 +1,6 @@
 export const site = {
   title: 'Ceylon Choice',
-  description: 'Premium Sri Lankan food products: snacks and groceries',
+  description: 'Premium Sri Lankan food products: snacks and groceries wholesale',
 };
 
 export const company = {
@@ -13,11 +13,11 @@ export const contact = {
   phone_lk: '+94 742903651',
   phone_uk: '+44 7405319419',
   phone_fr: '+33 745688635',
-  whatsappLink: 'https://wa.me/94742903651',
+  whatsappLink: 'https://wa.me/447405319419',
 };
 
 export const social = {
-  whatsapp: 'https://wa.me/94742903651',
+  whatsapp: 'https://wa.me/447405319419',
   instagram: 'https://instagram.com',
   facebook: 'https://facebook.com',
 };
