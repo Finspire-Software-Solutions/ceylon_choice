@@ -13,11 +13,11 @@ export const contact = {
   phone_lk: '+94 742903651',
   phone_uk: '+44 7405319419',
   phone_fr: '+33 745688635',
-  whatsappLink: 'https://wa.me/447405319419',
+  whatsappLink: 'https://wa.me/33745988635',
 };
 
 export const social = {
-  whatsapp: 'https://wa.me/447405319419',
+  whatsapp: 'https://wa.me/33745988635',
   instagram: 'https://instagram.com',
   facebook: 'https://facebook.com',
 };
